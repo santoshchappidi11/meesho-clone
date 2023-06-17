@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #fdecef; */
+}
+
+#meesho-navbar {
+  height: 72px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+#meesho-navbar > #navbar {
+  height: 100%;
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+#meesho-navbar > #navbar > #left {
+  /* background-color: white !important; */
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+#meesho-navbar > #navbar > #left > #logo > a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5px; */
+  /* border: 1px solid black; */
+}
+
+#meesho-navbar > #navbar > #left > #logo > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: contrast(150%);
+}
+
+#meesho-navbar > #navbar > #left > #search {
+  height: 64%;
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(157, 154, 154);
+}
+
+#meesho-navbar > #navbar > #left > #search > i {
+  font-size: 22px;
+}
+
+#meesho-navbar > #navbar > #left > #search > input {
+  height: 98%;
+  width: 92%;
+  border: none;
+  outline: none;
+}
+
+#meesho-navbar > #navbar > #left > #search > input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(127, 127, 127);
+}
+
+#meesho-navbar > #navbar > #right {
+  height: 100%;
+  width: 42% !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  /* border: 1px solid black; */
+}
+
+#meesho-navbar > #navbar > #right,
+#download,
+#supplier {
+  height: 75%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 2px solid rgb(191, 191, 191) !important; */
+}
+
+#download,
+#supplier {
+  border-right: 2px solid rgb(191, 191, 191);
+}
+
+#meesho-navbar > #navbar > #right,
+#download > span {
+  padding: 0 8px;
+  font-size: 15px;
+}
+#meesho-navbar > #navbar > #right,
+#supplier > span {
+  font-size: 15px;
+}
+
+#meesho-navbar > #navbar > #right > #others {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+#meesho-navbar > #navbar > #right > #others > .other {
+  height: 80%;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+#meesho-navbar > #navbar > #right > #others > .other > a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid black; */
+}
+
+#meesho-navbar > #navbar > #right > #others > .other > a > span {
+  font-size: 15px;
+}
+
+/* ---------------------body--------------- */
+
+#body {
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+  /* border: 1px solid black; */
+}
+
+#body > #wishlist-header {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 22px;
+  /* border: 1px solid black; */
+}
+
+#body > #wishlist-header > h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#body > #wishlist-header > span {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(107, 107, 107);
+}
+
+#body > #wishlist-items {
+  height: auto;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+
+#wishlist-items > .product {
+  height: 385px;
+  padding-bottom: 20px;
+  width: 230px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+#wishlist-items > .product > .image {
+  height: 60% !important;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* border: 1px solid black; */
+}
+
+#wishlist-items > .product > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#wishlist-items > .product > h5 {
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(153, 153, 153);
+}
+
+#wishlist-items > .product > h2 {
+  color: rgb(45, 45, 45);
+  padding: 0 10px;
+}
+
+#wishlist-items > .product > h2 > span {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(107, 107, 107);
+}
+
+#wishlist-items > .product > p {
+  font-size: 13px;
+  margin: 10px 0 15px 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #ededff;
+  /* border: 1px solid black; */
+}
+
+#wishlist-items > .product > .buttons {
+  height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  /* border: 1px solid black; */
+}
+
+#wishlist-items > .product > .buttons > .button {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+#wishlist-items > .product > .buttons > .button > button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* border: 1px solid grey; */
+}
+
+
+/* ------------------------Footer------------------------ */
+
+#footer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 0 0;
+  background-color: #f8f8ff;
+  padding: 25px 15px;
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-1,
+#footer-sec-2,
+#footer-sec-3,
+#footer-sec-4,
+#footer-sec-5 {
+  height: 320px;
+  width: auto;
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-1 {
+  width: 34%;
+}
+
+#footer > #footer-sec-1 > h2 {
+  font-size: 28px;
+  margin: 50px 0 0 20px;
+}
+
+#footer > #footer-sec-1 > p {
+  font-size: 16px;
+  margin: 10px 0 10px 20px;
+  width: 60%;
+  color: rgb(50, 50, 50);
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-1 > #stores {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-1 > #stores > #play-store,
+#apple-play {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-1 > #stores > #play-store > img {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+#footer > #footer-sec-1 > #stores > #apple-play > img {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-2 > div {
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 50px 0;
+  color: rgb(50, 50, 50);
+  font-weight: 500;
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-3 > div {
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 50px 0;
+  color: rgb(50, 50, 50);
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-4 {
+  width: 12%;
+}
+
+#footer > #footer-sec-4 > div {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  /* justify-content: space-around; */
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-4 > div > h4 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#footer > #footer-sec-4 > div > #socials {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  color: rgb(50, 50, 50);
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-5 {
+  width: 20%;
+}
+
+#footer > #footer-sec-5 > div {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 50px 0;
+  /* border: 1px solid black; */
+}
+
+#footer > #footer-sec-5 > div > h4 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#footer > #footer-sec-5 > div > div {
+  margin-top: 15px;
+}
+
+#footer > #footer-sec-5 > div > div > p {
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+}

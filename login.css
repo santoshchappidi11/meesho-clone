@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #fdecef; */
+}
+
+#meesho-navbar {
+  height: 72px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+#meesho-navbar > #navbar {
+  height: 100%;
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+#meesho-navbar > #navbar > #left {
+  /* background-color: white !important; */
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+#meesho-navbar > #navbar > #left > #logo > a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5px; */
+  /* border: 1px solid black; */
+}
+
+#meesho-navbar > #navbar > #left > #logo > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: contrast(150%);
+}
+
+#meesho-navbar > #navbar > #left > #search {
+  height: 64%;
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(157, 154, 154);
+}
+
+#meesho-navbar > #navbar > #left > #search > i {
+  font-size: 22px;
+}
+
+#meesho-navbar > #navbar > #left > #search > input {
+  height: 98%;
+  width: 92%;
+  border: none;
+  outline: none;
+}
+
+#meesho-navbar > #navbar > #left > #search > input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(127, 127, 127);
+}
+
+#meesho-navbar > #navbar > #right {
+  height: 100%;
+  width: 30% !important;
+  display: flex;
+  align-items: center;
+  border: none;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+}
+
+#meesho-navbar > #navbar > #right,
+#download,
+#supplier {
+  height: 75%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+#download {
+  border-right: 2px solid rgb(191, 191, 191);
+}
+
+#meesho-navbar > #navbar > #right,
+#download > span {
+  padding: 0 8px;
+  font-size: 15px;
+}
+
+#meesho-navbar > #navbar > #right,
+#supplier > span {
+  font-size: 15px;
+}
+
+/* ---------body--------------------- */
+
+#body {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdecef;
+  margin-top: 65px;
+  /* border: 2px solid black; */
+}
+
+#body > #login {
+  height: 100%;
+  width: 32%;
+  margin: 40px 0 30px 0;
+  border-radius: 10px;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+
+#body > #login > #image {
+  height: 200px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+#body > #login > #image > img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+#body > #login > #login-main {
+  height: auto;
+  width: 85%;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+#body > #login > #login-main > h3 {
+  margin-top: 50px;
+  font-weight: 600;
+  color: rgb(76, 76, 76);
+}
+
+#body > #login > #login-main > #fields {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  /* border: 1px solid black; */
+}
+
+#body > #login > #login-main > #fields > input {
+  height: 50px;
+  width: 80%;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+#body > #login > #login-main > #fields > input:hover {
+  border-bottom: 1px solid #9f2089;
+}
+
+#body > #login > #login-main > #fields > input::placeholder {
+  font-size: 16px;
+  color: rgb(157, 157, 157);
+}
+
+#body > #login > #login-main > #button {
+  margin-top: 25px;
+  height: 46px;
+  /* border: 1px solid black; */
+}
+
+#body > #login > #login-main > #button > button {
+  height: 100%;
+  width: 100%;
+  background-color: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #9f2089;
+  color: white;
+  font-size: 16px;
+}
+
+#body > #login > #login-main > #sign-up {
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgb(57, 57, 57);
+  /* border: 1px solid black; */
+}
+
+#body > #login > #login-main > #sign-up > span > a {
+  text-decoration: none;
+  color: #9f2089;
+  font-weight: bold;
+}
+
+#body > #login > #login-main > #policy {
+  margin: 40px 0 20px 0;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(57, 57, 57);
+  /* border: 1px solid black; */
+}
+
+#body > #login > #login-main > #policy > span > b {
+  color: #9f2089;
+}
